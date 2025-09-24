@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var (
+		nama, nim, kelas string
+	)
+	fmt.Print("Masukan nama :")
+	fmt.Scanln(&nama)
+	fmt.Print("Masukan nim :")
+	fmt.Scanln(&nim)
+	fmt.Print("Masukan kelas :")
+	fmt.Scanln(&kelas)
+	fmt.Println("Perkenalkan nama saya adalah " + nama + ",salah satu mahasiswa Prodi S1-IF dari " + "" + kelas + " dengan NIM " + "" + nim)
+
+}
