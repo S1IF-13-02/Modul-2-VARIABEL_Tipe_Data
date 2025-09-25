@@ -1,0 +1,25 @@
+package main
+
+import "fmt"
+
+func InputBiodata(nama string, nim string, prodi string) string {
+	return "Perkenalkan nama saya adalah" + " " + nama + "," + " " + "salah satu\nmahasiswa Prodi S1-IF dari kelas" + " " + prodi + "\ndengan NIM" + " " + nim
+}
+
+func main() {
+
+	var nama, nim, prodi string
+
+	fmt.Print("Masukkan Nama: ")
+	fmt.Scan(&nama)
+
+	fmt.Print("Masukkan NIM: ")
+	fmt.Scan(&nim)
+
+	fmt.Print("Masukkan Kelas: ")
+	fmt.Scan(&prodi)
+
+	result := InputBiodata(nama, nim, prodi)
+
+	fmt.Println(result)
+}
