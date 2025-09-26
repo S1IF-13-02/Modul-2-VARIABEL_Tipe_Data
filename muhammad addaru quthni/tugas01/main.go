@@ -3,14 +3,20 @@ package main
 import "fmt"
 
 func main() {
-	var strs [3]string
-	fmt.Print("input string: ")
-	fmt.Scanln(&strs[0])
-	fmt.Print("input string: ")
-	fmt.Scanln(&strs[1])
-	fmt.Print("input string: ")
-	fmt.Scanln(&strs[2])
-	fmt.Println("Output awal =", strs[0], strs[1], strs[2])
-	strs[0], strs[1], strs[2] = strs[1], strs[2], strs[0]
-	fmt.Println("Output akhir =", strs[0], strs[1], strs[2])
+	var (
+		satu, dua, tiga string
+		temp            string
+	)
+	fmt.Print("Masukan input string: ")
+	fmt.Scanln(&satu)
+	fmt.Print("Masukan input string: ")
+	fmt.Scanln(&dua)
+	fmt.Print("Masukan input string: ")
+	fmt.Scanln(&tiga)
+	fmt.Println("Output awal = " + satu + " " + dua + " " + tiga)
+	temp = satu
+	satu = dua
+	dua = tiga
+	tiga = temp
+	fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 }
