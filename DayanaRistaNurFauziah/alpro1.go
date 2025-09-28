@@ -19,7 +19,6 @@ func main() {
 
 	fmt.Println("Output awal = " + satu + " " + dua + " " + tiga)
 
-	// Proses pertukaran
 	temp = satu
 	satu = dua
 	dua = tiga
@@ -27,3 +26,4 @@ func main() {
 
 	fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 }
+
